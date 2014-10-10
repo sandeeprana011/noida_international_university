@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sirfireys.rana.noidainternationaluniverstiy.TextFileView$PlaceholderFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_txt_data"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp">
+
+        <TextView
+            android:id="@+id/text_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Downloading Data Please Wait...."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/text_txt_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@+id/text_txt_data_date"
+        android:layout_toStartOf="@+id/text_txt_data_size"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/text_txt_data_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_txt_data"
+        android:layout_alignBottom="@+id/text_txt_data"
+        android:layout_alignParentLeft="true"
+        android:text="Small Text"
+
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/text_txt_data_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/scrollView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

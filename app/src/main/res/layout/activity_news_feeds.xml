@@ -1,0 +1,40 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5sp"
+    android:paddingRight="5sp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/rel_container"
+    tools:context="sirfireys.rana.noidainternationaluniversity.NewsFeeds">
+
+<LinearLayout
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ProgressBar
+        android:id="@+id/progress_newsfeeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textview_newsfeeds_refreshingdata"
+        android:layout_width="wrap_content"
+        android:text="Refreshing Latest News"
+        android:layout_height="wrap_content" />
+    <WebView
+        android:id="@+id/web_view1"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+
+</LinearLayout>
+
+
+</ScrollView>

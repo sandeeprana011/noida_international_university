@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="niu_green">#118855</color>
+<color name="niu_light">#77ddaa</color>
+<color name="blue_best">#44bbcc</color>
+<color name="blue_button">#ff0090aa</color>
+<color name="white">#FFFFFF</color>
+    <color name="yellow_light">#8cffee23</color>
+    <color name="coco">#a6b67200</color>
+    <color name="light_coco">#a0e0b8e2</color>
+
+</resources>

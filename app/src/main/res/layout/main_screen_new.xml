@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:id="@+id/scrollV_a">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    <ImageView
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_cover"
+        android:src="@drawable/niu_cover"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_horizontal" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/niu_green"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        />
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/address_niu"
+    android:textAlignment="center"
+    android:gravity="center"
+    android:textColor="@color/blue_button"
+    android:layout_gravity="center"
+    android:textSize="20sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            style="@style/ButtonTheme"
+            android:onClick="showAboutOptions"
+            android:text="About\nNIU"
+
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:id="@+id/but_abt_niu" />
+        <Button
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:onClick="showAboutSET"
+            style="@style/ButtonTheme"
+            android:text="About\nSET"
+
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:id="@+id/but_abt_set" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            style="@style/ButtonTheme"
+            android:textSize="20sp"
+
+            android:textColor="@color/white"
+            android:onClick="showAcademics"
+            android:text="Academics\n&amp;Fee"
+            />
+        <Button
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_height="fill_parent"
+            android:onClick="showAdmission"
+            style="@style/ButtonTheme"
+            android:text="Admission\n@NIU"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            style="@style/ButtonTheme"
+            android:onClick="contactNIU"
+            android:text="Contact\n@NIU"
+            />
+        <Button
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:onClick="cseDownloads"
+            style="@style/ButtonTheme"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Class Notes\nDownloads"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/blue_button"
+            android:onClick="aboutUs"
+            android:text="About\nDevelopers"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/coco"
+            android:onClick="shareApp"
+            android:text="Share\nApplication"
+            />
+
+
+    </LinearLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="sirfireys.rana.noidainternationaluniversity.news_feeds"
+        tools:layout="@layout/activity_news_feeds" />
+
+
+
+
+</LinearLayout>
+</ScrollView>

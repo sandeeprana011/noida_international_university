@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dialog_list_data">
+        <item>Why NIU</item>
+        <item>VC Message</item>
+        <item>Our Foundation</item>
+        <item>Grow with NIU</item>
+    </string-array>
+</resources>
+
